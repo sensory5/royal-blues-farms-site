@@ -1,7 +1,11 @@
-import '../styles/globals.css'
+import "../styles/index.scss";
+import { useEffect } from "react";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function RBFApp({ Component, pageProps }) {
+  useEffect(() => {
+    import("bootstrap");
+  }, []);
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default RBFApp;
