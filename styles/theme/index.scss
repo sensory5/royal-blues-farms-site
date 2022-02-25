@@ -1,3 +1,45 @@
 body {
-  background: #eeeeff;
+  background: $blue;
+  letter-spacing: .015em;
+}
+
+h1 {
+  font-size: $font-size-base * 3;
+  letter-spacing: .05em;
+}
+h3 {
+  font-size: $font-size-base * 2;
+  letter-spacing: .05em;
+}
+
+p {
+  letter-spacing: .015em;
+}
+
+.rbf-content {
+  p {
+    font-size: $font-size-lg;
+    line-height: 1.75;
+    margin-bottom: 1.75rem;
+  }
+}
+
+.rbf-cols-blue {
+  border: 6px solid $white;
+  min-height: 280px;
+  margin-top: -80px;
+  position: relative;
+
+  p {
+    font-size: $font-size-base * 1.125;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  p.date {
+    line-height: 1.25;
+  }
 }
