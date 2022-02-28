@@ -1,5 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
+import Button from "../components/button";
+import Hero from "../components/hero";
+import Features from "../components/features";
+import Feature from "../components/feature";
 
 export default function Home() {
   return (
@@ -16,6 +20,15 @@ export default function Home() {
       </Head>
 
       <main>
+        <Hero
+          src="img-hero-berryfield.jpg"
+          alt="Blueberries Field"
+          srcLogo="img-rbf-logo.svg"
+          altLogo="Royal Blues Farm Logo"
+          widthLogo={500}
+          heightLogo={318}
+        />
+
         <div className="container my-5 text-center text-white rbf-content">
           <h1 className="text-uppercase fw-bold">Our Story</h1>
 
@@ -26,37 +39,19 @@ export default function Home() {
           <p>Life may be moving fast and ever changing; but out here you can slow down, stay awhile and take it all in.</p>
         </div>
 
-        <div className="container my-5">
-          <div className="row">
-            <div className="col-md-4">
-              <div className="rbf-cols-blue-img">
-                <Image
-                  src="/images/img-bluebery-bucket.jpg"
-                  alt="Blueberries in a bucket"
-                  width={764}
-                  height={562}
-                />
-              </div>
-              <div className="bg-info rbf-cols-blue p-4 mx-4 text-center text-white">
-                <h3 class="text-uppercase fw-bold">U-Pick Dates</h3>
-                <p class="date">Saturday, March 5, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
-                <p class="date">Saturday, March 19, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
-                <p class="date">Saturday, March 26, 2022<br /><span className="text-secondary">5:00pm - 8:00pm</span></p>
-              </div>
-            </div>
+        <Features>
+            <Feature src="img-bluebery-bucket.jpg"
+                     alt="Blueberries in a bucket"
+                     title="U-Pick Dates">
+                 <p class="date">Saturday, March 5, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
+                 <p class="date">Saturday, March 19, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
+                 <p class="date">Saturday, March 26, 2022<br /><span className="text-secondary">5:00pm - 8:00pm</span></p>
+            </Feature>
 
-            <div className="col-md-4">
-              <div className="rbf-cols-blue-img">
-                <Image
-                  src="/images/img-bluebery-branch.jpg"
-                  alt="Blueberries on a branch"
-                  width={764}
-                  height={562}
-                />
-              </div>
-              <div className="bg-info rbf-cols-blue p-4 mx-4 text-center text-white">
-                <h3 class="text-uppercase fw-bold">Follow Us</h3>
-                <p>Hang with us in the<br />blueberry fields.</p>
+            <Feature src="img-bluebery-branch.jpg"
+                     alt="Blueberries on a branch"
+                     title="Follow Us">
+                 <p>Hang with us in the<br />blueberry fields.</p>
 
                 <div className="rbf-social">
                   <a className="rbf-social_icons" href="https://www.facebook.com/royalbluesfarm" target="_blank" aria-label="Tweet Us">
@@ -68,27 +63,15 @@ export default function Home() {
                     <span className="sr-only">Instagram</span>
                   </a>
                 </div>
-              </div>
-            </div>
+            </Feature>
+            <Feature src="img-bluebery-closeup.jpg"
+                     alt="Close up of multi-colored blueberries"
+                     title="Location">
+                 <p>28078 Johnston Rd.<br />Dade City, FL 33523</p>
 
-            <div className="col-md-4">
-              <div className="rbf-cols-blue-img">
-                <Image
-                  src="/images/img-bluebery-closeup.jpg"
-                  alt="Close up of multi-colored blueberries"
-                  width={764}
-                  height={562}
-                />
-              </div>
-              <div className="bg-info rbf-cols-blue p-4 mx-4 text-center text-white">
-                <h3 class="text-uppercase fw-bold">Location</h3>
-                <p>28078 Johnston Rd.<br />Dade City, FL 33523</p>
-
-                <p className="text-secondary small"><a href="#" target="_blank">Navigate with Google Maps</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
+                 <p className="text-secondary small"><a href="https://goo.gl/maps/PGADmq5nbRs1kYrA7" target="_blank">Navigate with Google Maps</a></p>
+            </Feature>
+        </Features>
 
 
 

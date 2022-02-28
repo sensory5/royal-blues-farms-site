@@ -16,6 +16,38 @@ p {
   letter-spacing: .015em;
 }
 
+// hero
+.rbf-hero {
+  position: relative;
+  min-height: 460px;
+  max-height: 920px;
+
+  @include media-breakpoint-up(sm) {
+    min-height: 660px;
+  }
+  @include media-breakpoint-up(xl) {
+    min-height: 880px;
+  }
+  @include media-breakpoint-up(xxl) {
+    min-height: 920px;
+  }
+
+  .rbf-hero-overlay {
+    @include media-breakpoint-down(sm) {
+      padding-top: 1rem !important;
+    }
+
+    img {
+      @include media-breakpoint-down(xl) {
+        width: 350px !important;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 250px !important;
+      }
+    }
+  }
+}
+
 .rbf-content {
   p {
     font-size: $font-size-lg;
@@ -29,6 +61,13 @@ p {
   min-height: 280px;
   margin-top: -80px;
   position: relative;
+
+  @include media-breakpoint-down(xl) {
+    min-height: 305px;
+  }
+  @include media-breakpoint-down(lg) {
+    min-height: auto;
+  }
 
   p {
     font-size: $font-size-base * 1.125;
