@@ -4,6 +4,7 @@ import Button from "../components/button";
 import Hero from "../components/hero";
 import Features from "../components/features";
 import Feature from "../components/feature";
+import Modal from "../components/modal";
 
 export default function Home() {
     return (
@@ -83,6 +84,16 @@ export default function Home() {
                         </p>
                     </Feature>
                 </Features>
+
+                <h2 className="display-6 text-center">Open modal</h2>
+                <div className="text-center">
+                    <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MyModal">
+                        Launch demo modal
+                    </button>
+                    <Modal id="MyModal" title="This is my modal">
+                        <p>This is the body of the modal</p>
+                    </Modal>
+                </div>
             </main>
 
 
