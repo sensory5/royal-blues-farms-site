@@ -48,6 +48,7 @@ p {
   }
 }
 
+// content
 .rbf-content {
   p {
     font-size: $font-size-lg;
@@ -56,6 +57,7 @@ p {
   }
 }
 
+// content columns
 .rbf-cols-blue {
   border: 6px solid $white;
   min-height: 280px;
@@ -80,5 +82,42 @@ p {
   }
   p.date {
     line-height: 1.25;
+  }
+}
+
+// divider
+.rbf-divider-line {
+  background-color: rgba($white, .5);
+  height: 2px;
+
+  @media (max-width: 440px) {
+    height: 1px;
+  }
+}
+
+.rbf-divider-icon {
+  img {
+    opacity: .5;
+  }
+}
+
+// recipe
+.rbf-recipe {
+  .rbf-recipe-img {
+    img {
+      border: 6px solid $white !important;
+    }
+  }
+
+  .btn-link {
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+
+    &:hover,
+    &:active {
+      color: $secondary;
+    }
   }
 }

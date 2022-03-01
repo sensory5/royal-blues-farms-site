@@ -12,7 +12,6 @@ export default function Home() {
             <Head>
                 <title>The title goes here</title>
                 <meta name="description" content="Description of the page here" />
-                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main className="container">

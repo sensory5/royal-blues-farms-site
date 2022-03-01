@@ -4,17 +4,18 @@ import Button from "../components/button";
 import Hero from "../components/hero";
 import Features from "../components/features";
 import Feature from "../components/feature";
+import Divider from "../components/divider";
+import Recipes from "../components/recipes";
+import Recipe from "../components/recipe";
+import Modal from "../components/modal";
 
 export default function Home() {
   return (
     <div className="rbf-layout">
 
       <Head>
-        <title>The title goes here</title>
-        <meta name="description" content="Description of the page here" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Karma:wght@400;600;700&display=swap" rel="stylesheet" />
+        <title>Royal Blues Farm</title>
+        <meta name="description" content="Royal Blues Farm U-Pick website" />
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -72,6 +73,27 @@ export default function Home() {
                  <p className="text-secondary small"><a href="https://goo.gl/maps/PGADmq5nbRs1kYrA7" target="_blank">Navigate with Google Maps</a></p>
             </Feature>
         </Features>
+
+        <Divider
+          src="img-icon-berries.svg"
+          alt="Blueberries Icon"
+          width={83}
+          height={78}
+        />
+
+        <Recipes title="Our Favorite Blueberry Recipes" text="Click to view recipes">
+            <Recipe src="img-crumble-recipe-1.jpg" alt="Blueberry Crumble Recipe">
+              <button type="button" class="btn btn-link text-uppercase" data-bs-toggle="modal" data-bs-target="#recipeModal1">
+                Blueberry Crumble Bars Recipe
+              </button>
+            </Recipe>
+
+            <Recipe src="img-creamsicle-recipe-1.jpg" alt="Blueberry Lemon Creamsicle Recipe">
+              <button type="button" class="btn btn-link text-uppercase" data-bs-toggle="modal" data-bs-target="#recipeModal2">
+                Blueberry Lemon Creamsicle Recipe
+              </button>
+            </Recipe>
+        </Recipes>
 
 
 
