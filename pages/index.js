@@ -80,17 +80,17 @@ export default function Home() {
           height={78}
         />
 
-        <Recipes title="Our Favorite Blueberry Recipes" text="Click to view recipes" href="#RecipeModal1">
-            <Recipe src="img-crumble-recipe-1.jpg" alt="Blueberry Crumble Recipe">
+        <Recipes title="Our Favorite Blueberry Recipes" text="Click to view recipes">
+            <Recipe src="img-crumble-recipe-1.jpg" alt="Blueberry Crumble Recipe" target="#RecipeModal1">
               <button type="button" className="btn btn-link text-uppercase" data-bs-toggle="modal" data-bs-target="#RecipeModal1">
                 Blueberry Crumble Bars Recipe
               </button>
               <Modal id="RecipeModal1">
                 <Image
-                  src="/images/img-crumble-recipe-2.jpg"
-                  alt="Blueberry Crumble Bar Recipe"
-                  width={1183}
-                  height={439}
+                    src="/images/img-crumble-recipe-2.jpg"
+                    alt="Blueberry Crumble Bar Recipe"
+                    width={1183}
+                    height={439}
                 />
 
                 <div className="rbf-modal-content text-start p-4">
@@ -137,18 +137,19 @@ export default function Home() {
                   </div>
                 </div>
               </Modal>
+
             </Recipe>
 
-            <Recipe src="img-creamsicle-recipe-1.jpg" alt="Blueberry Lemon Creamsicle Recipe" href="#RecipeModal2">
+            <Recipe src="img-creamsicle-recipe-1.jpg" alt="Blueberry Lemon Creamsicle Recipe" target="#RecipeModal2">
               <button type="button" className="btn btn-link text-uppercase" data-bs-toggle="modal" data-bs-target="#RecipeModal2">
                 Blueberry Lemon Creamsicle Recipe
               </button>
               <Modal id="RecipeModal2">
                 <Image
-                  src="/images/img-creamsicle-recipe-2.jpg"
-                  alt="Blueberry Lemon Creamsicle Recipe"
-                  width={1183}
-                  height={439}
+                    src="/images/img-creamsicle-recipe-2.jpg"
+                    alt="Blueberry Lemon Creamsicle Recipe"
+                    width={1183}
+                    height={439}
                 />
 
                 <div className="rbf-modal-content text-start p-4">
@@ -189,13 +190,9 @@ export default function Home() {
             </Recipe>
         </Recipes>
 
-
-
-
-
-          <div className="d-flex justify-content-center">
-              <div className="alert alert-primary alert-dismissible fade show w-50" role="alert">
-                  <strong>Edit this file</strong> in <code>pages/index.js</code>
+        <div className="d-flex justify-content-center">
+          <div className="alert alert-primary alert-dismissible fade show w-50" role="alert">
+            <strong>Edit this file</strong> in <code>pages/index.js</code>
                   <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"/>
               </div>
           </div>
