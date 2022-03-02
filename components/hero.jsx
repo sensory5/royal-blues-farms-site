@@ -1,14 +1,13 @@
 import Image from "next/image";
 
-export default function Hero({title, src, width, height, alt, children}) {
+export default function Hero({srcLogo, widthLogo, heightLogo, altLogo, src, alt}) {
     return (
-        <div className="row">
-            <div className="px-4 py-2 my-4 text-center">
-                <Image src={src} width={width} height={height} alt={alt} />
-                <h1 className="display-5 fw-bold">{title}</h1>
-                <div className="col-lg-6 mx-auto">
-                    {children}
-                </div>
+        <div className="rbf-hero">
+            <div className="rbf-hero-img">
+                <Image src={`/images/${src}`} layout="fill" objectFit="cover" alt={alt} />
+            </div>
+            <div className="rbf-hero-overlay p-4 text-center">
+                <Image src={`/images/${srcLogo}`} width={widthLogo} height={heightLogo} alt={altLogo} />
             </div>
         </div>
     );

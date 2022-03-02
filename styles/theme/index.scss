@@ -1,3 +1,194 @@
 body {
-  background: #eeeeff;
+  background: $blue;
+  letter-spacing: .015em;
+}
+
+h1 {
+  font-size: $font-size-base * 3;
+  letter-spacing: .05em;
+}
+h3 {
+  font-size: $font-size-base * 2;
+  letter-spacing: .05em;
+}
+
+p {
+  letter-spacing: .015em;
+}
+
+// hero
+.rbf-hero {
+  position: relative;
+  min-height: 460px;
+  max-height: 920px;
+
+  @include media-breakpoint-up(sm) {
+    min-height: 660px;
+  }
+  @include media-breakpoint-up(xl) {
+    min-height: 880px;
+  }
+  @include media-breakpoint-up(xxl) {
+    min-height: 920px;
+  }
+
+  .rbf-hero-overlay {
+    @include media-breakpoint-down(sm) {
+      padding-top: 1rem !important;
+    }
+
+    img {
+      @include media-breakpoint-down(xl) {
+        width: 350px !important;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 250px !important;
+      }
+    }
+  }
+}
+
+// content
+.rbf-content {
+  p {
+    font-size: $font-size-lg;
+    line-height: 1.75;
+    margin-bottom: 1.75rem;
+  }
+}
+
+// content columns
+.rbf-cols-blue {
+  border: 6px solid $white;
+  min-height: 345px;
+  margin-top: -80px;
+  position: relative;
+
+  @include media-breakpoint-down(xl) {
+    min-height: 366px;
+  }
+  @include media-breakpoint-down(lg) {
+    min-height: auto;
+  }
+
+  p {
+    font-size: $font-size-base * 1.125;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  p.date {
+    line-height: 1.25;
+  }
+}
+
+// social icons
+.rbf-social {
+  .rbf-social_icons {
+    color: #172852;
+    margin: 0 .75rem;
+    font-size: 3.5rem;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0 .5rem;
+      font-size: 3rem;
+    }
+
+    &:hover,
+    &:active {
+      color: $primary;
+    }
+  }
+}
+
+// divider
+.rbf-divider-line {
+  background-color: rgba($white, .5);
+  height: 2px;
+
+  @media (max-width: 440px) {
+    height: 1px;
+  }
+}
+
+.rbf-divider-icon {
+  img {
+    opacity: .5;
+  }
+}
+
+// recipe
+.rbf-recipe {
+  .rbf-recipe-img {
+    img {
+      border: 6px solid $white !important;
+    }
+  }
+
+  .btn-link {
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+
+    &:hover,
+    &:active {
+      color: $secondary;
+    }
+  }
+}
+
+// recipe modal
+.rbf-recipe-modal {
+  .modal-content {
+    border: 6px solid $white;
+    border-radius: 0;
+
+    img {
+      border: none !important;
+    }
+
+    .modal-body {
+      padding: 0;
+
+      .rbf-btn-close {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: space-between;
+
+        .btn-close {
+          position: absolute;
+          right: 1rem;
+          top: 1rem;
+          z-index: 99;
+          filter: invert(1);
+          opacity: 1;
+
+          &:hover {
+            opacity: .6;
+          }
+        }
+      }
+    }
+
+    .rbf-modal-content {
+      font-weight: 600;
+
+      li {
+        padding-bottom: 0.25rem;
+      }
+
+      ol {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+footer {
+  font-weight: 600;
 }

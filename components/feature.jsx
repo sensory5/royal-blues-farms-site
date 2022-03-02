@@ -1,16 +1,20 @@
-export default function Feature({title, icon, href, hrefLabel, children}) {
+import Image from "next/image";
+
+export default function Feature({src, alt, title, children}) {
    return (
-       <div className="feature col">
-           <div className="d-flex align-items-center justify-content-center mb-1 fs-2 rounded-3 bg-primary bg-gradient text-white"
-                style={{width: "4rem", height: "4rem"}}>
-               <i className={`bi ${icon}`} />
+       <div className="feature col-lg-4 mb-4 mb-md-5 mb-lg-0">
+           <div className="rbf-cols-blue-img">
+               <Image
+                 src={`/images/${src}`}
+                 alt={alt}
+                 width={764}
+                 height={562}
+               />
            </div>
-           <h2>{title}</h2>
-           {children}
-           <a href={href} className="icon-link">
-               {hrefLabel}
-               <i className="bi bi-chevron-right"/>
-           </a>
+           <div className="bg-info rbf-cols-blue p-3 p-xl-4 mx-3 mx-xl-4 text-center text-white">
+              <h3 className="text-uppercase fw-bold">{title}</h3>
+              {children}
+          </div>
        </div>
    )
 }

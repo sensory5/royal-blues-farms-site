@@ -1,93 +1,203 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import Button from "../components/button";
 import Hero from "../components/hero";
 import Features from "../components/features";
 import Feature from "../components/feature";
+import Divider from "../components/divider";
+import Recipes from "../components/recipes";
+import Recipe from "../components/recipe";
+import Modal from "../components/modal";
 
 export default function Home() {
-    return (
-        <div className="container my-4">
+  return (
+    <div className="rbf-layout">
 
-            <Head>
-                <title>The title goes here</title>
-                <meta name="description" content="Description of the page here" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+      <Head>
+        <title>Royal Blues Farm</title>
+        <meta name="description" content="Royal Blues Farm U-Pick website" />
 
-            <main className="container">
-                <h1 className="d-flex justify-content-center">
-                    Welcome to <span className="text-primary">Royal Blues Farms</span>
-                </h1>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-                <div className="row">
-                    <div className="d-flex justify-content-center">
-                        <div className="alert alert-primary alert-dismissible fade show w-50" role="alert">
-                            <strong>Edit this file</strong> in <code>pages/index.js</code>
-                            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"/>
-                        </div>
-                    </div>
-                </div>
+      <main>
+        <Hero
+          src="img-hero-berryfield.jpg"
+          alt="Blueberries Field"
+          srcLogo="img-rbf-logo.svg"
+          altLogo="Royal Blues Farm Logo"
+          widthLogo={500}
+          heightLogo={318}
+        />
 
-                <hr className="my-2"/>
+        <div className="container my-5 text-center text-white rbf-content">
+          <h1 className="text-uppercase fw-bold">Our Story</h1>
 
-                <div className="row">
-                    <h2 className="display-6 text-center">Example using a custom Button component</h2>
-                    <Button className="btn btn-primary w-50 mx-auto" href="https://google.com" id="button-1">
-                        Anything inside the markup is used as the <pre className="d-inline bg-white text-primary">children</pre>
-                    </Button>
-                </div>
+          <p>Our story begins with one simple idea: to grow fresh, high quality blueberries that our community and surrounding areas can enjoy for seasons to come. And over the past two years, Royal Blues Farm has evolved into so much more. We are Local grown. We are community oriented. And we take great pride to be able to represent Nature in its purest form. We are a native Florida family of many generations, and proud of where we come from. And as a Culinary trained chef, it is important to me to understand and respect the process of growing the freshest and tastiest blueberries around.</p>
 
-                <hr className="my-2"/>
+          <p>Here at the farm we want to share this farm experience with you and your family. Spending time outside in our fields can be good for the soul. It can revitalize your mind and energize your spirit. It is important to connect to where your food comes from, and we can provide just that. So come and join us, on our 50 acre farm, for some fresh air and happy smiles, while picking the best tasting blueberries around.</p>
 
-                <Hero src="/images/test-image.png" alt="Example Hero" title="A hero with no children" width={250} height={150}/>
-
-                <hr className="my-2"/>
-
-                <Hero src="/images/test-image.png" alt="Example Hero 2" title="A hero with children" width={100} height={100}>
-                    <p className="lead mb-4">This hero has children, and changes the width of the image using Next&apos;s Image component.</p>
-                    <p>Also note that apostrophes, must be added as <pre className="d-inline bg-info bg-opacity-25">&amp;apos;</pre>,
-                        for example: <pre className="d-inline bg-info bg-opacity-25">Next&amp;apos;s Image Component</pre> will
-                        produce <pre className="d-inline bg-info bg-opacity-25">Next&apos;s</pre></p>
-                    <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <Button className="btn btn-primary btn-lg px-4 gap-3" href="/" id="button-1">Button One</Button>
-                        <Button className="btn btn-secondary btn-lg px-4 gap-3" href="/" id="button-2">Button Two</Button>
-                    </div>
-                </Hero>
-
-                <hr className="my-2"/>
-
-                <Features title="Features component with multiple features">
-                    <Feature href="https://duckduckgo.com/?q=playful+cats&ia=web"
-                             hrefLabel="Play with twist ties"
-                             icon="bi-emoji-smile-fill"
-                             title="Cat Ipsum">
-                        <p>
-                            Cat ipsum dolor sit amet, play with twist ties twitch tail in permanent irritation but step on your keyboard while you're gaming and then turn in a circle . Play with twist ties what the heck just happened, something feels fishy cats are cute and disappear for four days and return home with an expensive injury; bite the vet so attack curtains.
-                        </p>
-                    </Feature>
-                    <Feature href="https://duckduckgo.com/?q=angry+cats&ia=web"
-                             hrefLabel="Stare accusingly"
-                             icon="bi-emoji-angry-fill"
-                             title="Cat Ipsum 2">
-                        <p>
-                            Stare at owner accusingly then wink. Stand in front of the computer screen twitch tail in permanent irritation for i hate cucumber pls dont throw it at me, yet wack the mini furry mouse for thinking longingly about tuna brine sit and stare. Wake up human for food at 4am find empty spot in cupboard and sleep all day attack the child and meow in empty rooms yet cats are a queer kind of folk.
-                        </p>
-                    </Feature>
-                    <Feature href="https://duckduckgo.com/?q=sunglass+cats&ia=web"
-                             hrefLabel="Cough furballs"
-                             icon="bi-emoji-sunglasses-fill"
-                             title="Cat Ipsum 3">
-                        <p>
-                            Cat ipsum dolor sit amet, whatever lounge in doorway, for cough furball into food bowl then scratch owner for a new one kick up litter. Whenever a door is opened, rush in before the human eat too much then proceed to regurgitate all over living room carpet while humans eat dinner for purr like an angel
-                        </p>
-                    </Feature>
-                </Features>
-            </main>
-
-
-            <footer className="">
-            </footer>
+          <p>Life may be moving fast and ever changing; but out here you can slow down, stay awhile and take it all in.</p>
         </div>
-    )
+
+        <Features>
+            <Feature src="img-bluebery-bucket.jpg"
+                     alt="Blueberries in a bucket"
+                     title="U-Pick Dates">
+                 <p className="date">Saturday, April 9, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
+                 <p className="date">Sunday, April 10, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
+                 <p className="date">Saturday, May 7, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
+                 <p className="date">Sunday, May 8, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
+            </Feature>
+
+            <Feature src="img-bluebery-branch.jpg"
+                     alt="Blueberries on a branch"
+                     title="Follow Us">
+                 <p className="mb-2">Hang with us in the<br />blueberry fields.</p>
+
+                <div className="rbf-social">
+                  <a className="rbf-social_icons" href="https://www.facebook.com/royalbluesfarm" target="_blank" aria-label="Like Us on Facebook">
+                    <i className="bi bi-facebook"></i>
+                  </a>
+                  <a className="rbf-social_icons" href="https://www.instagram.com/royalbluesfarm/" target="_blank" aria-label="Follow Us on Instagram">
+                    <i className="bi bi-instagram"></i>
+                  </a>
+                </div>
+            </Feature>
+            <Feature src="img-bluebery-closeup.jpg"
+                     alt="Close up of multi-colored blueberries"
+                     title="Location">
+                 <p>28078 Johnston Rd.<br />Dade City, FL 33523</p>
+
+                 <p className="text-secondary small"><a href="https://goo.gl/maps/PGADmq5nbRs1kYrA7" target="_blank">Navigate with Google Maps</a></p>
+            </Feature>
+        </Features>
+
+        <Divider
+          src="img-icon-berries.svg"
+          alt="Blueberries Icon"
+          width={83}
+          height={78}
+        />
+
+        <Recipes title="Our Favorite Blueberry Recipes" text="Click to view recipes">
+            <Recipe src="img-crumble-recipe-1.jpg" alt="Blueberry Crumble Recipe" target="#RecipeModal1">
+              <button type="button" className="btn btn-link text-uppercase" data-bs-toggle="modal" data-bs-target="#RecipeModal1">
+                Blueberry Crumble Bars Recipe
+              </button>
+              <Modal id="RecipeModal1">
+                <Image
+                    src="/images/img-crumble-recipe-2.jpg"
+                    alt="Blueberry Crumble Bar Recipe"
+                    width={1183}
+                    height={439}
+                />
+
+                <div className="rbf-modal-content text-start p-4">
+                  <h3 className="text-uppercase fw-bold">Blueberry Crumble Bars Recipe</h3>
+
+                  <div className="row">
+                    <div className="col-lg-6">
+                      <p className="text-uppercase mb-1">For the Crust:</p>
+                      <ul className="list-unstyled">
+                        <li>1 cup all-purpose flour</li>
+                        <li>2 cups graham cracker crumbs</li>
+                        <li>½ cup sugar</li>
+                        <li>½ cup brown sugar</li>
+                        <li>1 tsp baking powder</li>
+                        <li>¼ tsp salt</li>
+                        <li>1 egg</li>
+                        <li>½ tsp vanilla</li>
+                        <li>1 cup butter, chilled cut in cubes</li>
+                      </ul>
+                    </div>
+                    <div className="col-lg-6">
+                      <p className="text-uppercase mb-1">Filling:</p>
+                      <ul className="list-unstyled">
+                        <li>1 tbsp cornstarch</li>
+                        <li>½ cup sugar</li>
+                        <li>1 tbsp lemon juice</li>
+                        <li>4 cups fresh blueberries</li>
+                      </ul>
+                    </div>
+                    <div className="col-12 mt-3">
+                      <p className="text-uppercase mb-1">Directions:</p>
+                      <ol>
+                        <li>Preheat the oven to 350F. Line a 9x13 baking dish with parchment paper.</li>
+                        <li>In a mixer, mix all crust ingredients until mixture starts to clump into balls.</li>
+                        <li>Press 3/4 of the mixture into the baking dish and press to create an even layer of the crust.</li>
+                        <li>Mix all of the filling ingredients in a mixing bowl and stir until the berries are evenly coated.</li>
+                        <li>Spread the filling over the crust evenly.</li>
+                        <li>Sprinkle the remainder of the crust on top to create a crumble topper.</li>
+                        <li>Bake for 35-40 minutes, when the crumble appears golden.</li>
+                        <li>Let this sit until the crumble has cooled and set before cutting into bars (you can even place in the fridge to help it set more before cutting into squares or bars).</li>
+                        <li>Enjoy for breakfast or as a dessert with vanilla ice cream.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </Modal>
+
+            </Recipe>
+
+            <Recipe src="img-creamsicle-recipe-1.jpg" alt="Blueberry Lemon Creamsicle Recipe" target="#RecipeModal2">
+              <button type="button" className="btn btn-link text-uppercase" data-bs-toggle="modal" data-bs-target="#RecipeModal2">
+                Blueberry Lemon Creamsicle Recipe
+              </button>
+              <Modal id="RecipeModal2">
+                <Image
+                    src="/images/img-creamsicle-recipe-2.jpg"
+                    alt="Blueberry Lemon Creamsicle Recipe"
+                    width={1183}
+                    height={439}
+                />
+
+                <div className="rbf-modal-content text-start p-4">
+                  <h3 className="text-uppercase fw-bold">Blueberry Lemon Creamsicle Recipe</h3>
+
+                  <div className="row">
+                    <div className="col-lg-6">
+                      <p className="text-uppercase mb-1">Blueberry Mixture:</p>
+                      <ul className="list-unstyled">
+                        <li>2 cups blueberries (fresh or frozen)</li>
+                        <li>2 tbsp lemon juice</li>
+                        <li>2 tbsp water</li>
+                        <li>¼ cup sugar</li>
+                      </ul>
+                    </div>
+                    <div className="col-lg-6">
+                      <p className="text-uppercase mb-1">Cream Layer:</p>
+                      <ul className="list-unstyled">
+                        <li>2 cups full fat greek yogurt (plain or vanilla)</li>
+                        <li>¼ cup honey (or Royal Blues Farm seasonal blueberry honey)</li>
+                        <li>2 tbsp freshly squeezed lemon juice</li>
+                      </ul>
+                    </div>
+                    <div className="col-12 mt-3">
+                      <p className="text-uppercase mb-1">Directions:</p>
+                      <ol>
+                        <li>Combine all blueberry mixture ingredients in a saucepan. Cook on medium heat until berries cook down and can be smashed with a fork (about 29 minutes). Let cool.</li>
+                        <li>In a mixing bowl, combine the milk and condensed milk and stir until completely mixed. Stir in lemon juice. You can add more lemon if you like it tart.</li>
+                        <li>Pour cream mixture about 2/3 full in each popsicle mold.</li>
+                        <li>Put 1-2 spoonfuls of blueberry mixture in each mold. Store with a popsicle stick to swirl the mixtures together.</li>
+                        <li>Freeze and enjoy.</li>
+                      </ol>
+                      <p className="small">Yield: 10-12 popsicles</p>
+                    </div>
+                  </div>
+                </div>
+              </Modal>
+            </Recipe>
+        </Recipes>
+
+      </main>
+
+      <footer className="text-center text-white">
+        <p className="small">Copyright &copy;{new Date().getFullYear()} Royal Blues Farm, Inc. <span className="px-1">|</span> Powered by <a href="http://sensory5.com" target="_blank">Sensory 5</a></p>
+      </footer>
+
+
+    </div>
+  )
 }
