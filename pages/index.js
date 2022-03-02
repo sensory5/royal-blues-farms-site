@@ -53,16 +53,14 @@ export default function Home() {
             <Feature src="img-bluebery-branch.jpg"
                      alt="Blueberries on a branch"
                      title="Follow Us">
-                 <p>Hang with us in the<br />blueberry fields.</p>
+                 <p className="mb-2">Hang with us in the<br />blueberry fields.</p>
 
                 <div className="rbf-social">
-                  <a className="rbf-social_icons" href="https://www.facebook.com/royalbluesfarm" target="_blank" aria-label="Tweet Us">
-                    <i className="fa-brands fa-facebook-square"></i>
-                    <span className="sr-only">Facebook</span>
+                  <a className="rbf-social_icons" href="https://www.facebook.com/royalbluesfarm" target="_blank" aria-label="Like Us on Facebook">
+                    <i className="bi bi-facebook"></i>
                   </a>
-                  <a className="rbf-social_icons" href="https://www.instagram.com/royalbluesfarm/" target="_blank" aria-label="Tweet Us">
-                    <i className="fa-brands fa-instagram"></i>
-                    <span className="sr-only">Instagram</span>
+                  <a className="rbf-social_icons" href="https://www.instagram.com/royalbluesfarm/" target="_blank" aria-label="Follow Us on Instagram">
+                    <i className="bi bi-instagram"></i>
                   </a>
                 </div>
             </Feature>

@@ -85,6 +85,20 @@ p {
   }
 }
 
+// social icons
+.rbf-social {
+  .rbf-social_icons {
+    color: #172852;
+    margin: 0 .75rem;
+    font-size: 3.5rem;
+
+    &:hover,
+    &:active {
+      color: $primary;
+    }
+  }
+}
+
 // divider
 .rbf-divider-line {
   background-color: rgba($white, .5);
