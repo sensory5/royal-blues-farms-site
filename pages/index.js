@@ -88,10 +88,10 @@ export default function Home() {
               </button>
               <Modal id="RecipeModal1">
                 <Image
-                  src="/images/img-crumble-recipe-2.jpg"
-                  alt="Blueberry Crumble Bar Recipe"
-                  width={1183}
-                  height={439}
+                    src="/images/img-crumble-recipe-2.jpg"
+                    alt="Blueberry Crumble Bar Recipe"
+                    width={1183}
+                    height={439}
                 />
 
                 <div className="rbf-modal-content text-start p-4">
@@ -138,18 +138,19 @@ export default function Home() {
                   </div>
                 </div>
               </Modal>
+
             </Recipe>
 
-            <Recipe src="img-creamsicle-recipe-1.jpg" alt="Blueberry Lemon Creamsicle Recipe" href="#RecipeModal2">
+            <Recipe src="img-creamsicle-recipe-1.jpg" alt="Blueberry Lemon Creamsicle Recipe" target="#RecipeModal2">
               <button type="button" className="btn btn-link text-uppercase" data-bs-toggle="modal" data-bs-target="#RecipeModal2">
                 Blueberry Lemon Creamsicle Recipe
               </button>
               <Modal id="RecipeModal2">
                 <Image
-                  src="/images/img-creamsicle-recipe-2.jpg"
-                  alt="Blueberry Lemon Creamsicle Recipe"
-                  width={1183}
-                  height={439}
+                    src="/images/img-creamsicle-recipe-2.jpg"
+                    alt="Blueberry Lemon Creamsicle Recipe"
+                    width={1183}
+                    height={439}
                 />
 
                 <div className="rbf-modal-content text-start p-4">

@@ -12,7 +12,7 @@ export default function Feature({src, alt, title, children}) {
                />
            </div>
            <div className="bg-info rbf-cols-blue p-3 p-xl-4 mx-3 mx-xl-4 text-center text-white">
-              <h3 class="text-uppercase fw-bold">{title}</h3>
+              <h3 className="text-uppercase fw-bold">{title}</h3>
               {children}
           </div>
        </div>
