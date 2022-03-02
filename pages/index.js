@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
-import Button from "../components/button";
 import Hero from "../components/hero";
 import Features from "../components/features";
 import Feature from "../components/feature";
@@ -57,11 +55,11 @@ export default function Home() {
                  <p className="mb-2">Hang with us in the<br />blueberry fields.</p>
 
                 <div className="rbf-social">
-                  <a className="rbf-social_icons" href="https://www.facebook.com/royalbluesfarm" target="_blank" aria-label="Like Us on Facebook">
-                    <i className="bi bi-facebook"></i>
+                  <a className="rbf-social_icons" href="https://www.facebook.com/royalbluesfarm" target="_blank" aria-label="Like Us on Facebook" rel="noreferrer">
+                    <i className="bi bi-facebook"/>
                   </a>
-                  <a className="rbf-social_icons" href="https://www.instagram.com/royalbluesfarm/" target="_blank" aria-label="Follow Us on Instagram">
-                    <i className="bi bi-instagram"></i>
+                  <a className="rbf-social_icons" href="https://www.instagram.com/royalbluesfarm/" target="_blank" aria-label="Follow Us on Instagram" rel="noreferrer">
+                    <i className="bi bi-instagram"/>
                   </a>
                 </div>
             </Feature>
@@ -70,7 +68,7 @@ export default function Home() {
                      title="Location">
                  <p>28078 Johnston Rd.<br />Dade City, FL 33523</p>
 
-                 <p className="text-secondary small"><a href="https://goo.gl/maps/PGADmq5nbRs1kYrA7" target="_blank">Navigate with Google Maps</a></p>
+                 <p className="text-secondary small"><a href="https://goo.gl/maps/PGADmq5nbRs1kYrA7" target="_blank" rel="noreferrer">Navigate with Google Maps</a></p>
             </Feature>
         </Features>
 
@@ -194,10 +192,9 @@ export default function Home() {
       </main>
 
       <footer className="text-center text-white">
-        <p className="small">Copyright &copy;{new Date().getFullYear()} Royal Blues Farm, Inc. <span className="px-1">|</span> Powered by <a href="http://sensory5.com" target="_blank">Sensory 5</a></p>
+        <p className="small">Copyright &copy;{new Date().getFullYear()} Royal Blues Farm, Inc. <span className="px-1">|</span> Powered by
+          <a href="http://sensory5.com" target="_blank" rel="noreferrer">Sensory 5</a></p>
       </footer>
-
-
     </div>
   )
 }
