@@ -82,7 +82,7 @@ export default function Home() {
         />
 
         <Recipes title="Our Favorite Blueberry Recipes" text="Click to view recipes">
-            <Recipe src="img-crumble-recipe-1.jpg" alt="Blueberry Crumble Recipe" href="#RecipeModal1">
+            <Recipe src="img-crumble-recipe-1.jpg" alt="Blueberry Crumble Recipe" target="#RecipeModal1">
               <button type="button" className="btn btn-link text-uppercase" data-bs-toggle="modal" data-bs-target="#RecipeModal1">
                 Blueberry Crumble Bars Recipe
               </button>
