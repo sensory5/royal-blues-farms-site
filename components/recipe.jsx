@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Recipe({src, alt, href, children}) {
    return (
-       <div class="col-md-6 rbf-recipe">
+       <div className="col-lg-6 rbf-recipe mb-4 mb-lg-0">
          <div className="rbf-recipe-img">
-            <a data-toggle="modal" href={href}>
+            <a data-bs-toggle="modal" href={href}>
                <Image
                  src={`/images/${src}`}
                  alt={alt}

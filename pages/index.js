@@ -45,9 +45,10 @@ export default function Home() {
             <Feature src="img-bluebery-bucket.jpg"
                      alt="Blueberries in a bucket"
                      title="U-Pick Dates">
-                 <p class="date">Saturday, March 5, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
-                 <p class="date">Saturday, March 19, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
-                 <p class="date">Saturday, March 26, 2022<br /><span className="text-secondary">5:00pm - 8:00pm</span></p>
+                 <p className="date">Saturday, April 9, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
+                 <p className="date">Sunday, April 10, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
+                 <p className="date">Saturday, May 7, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
+                 <p className="date">Sunday, May 8, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
             </Feature>
 
             <Feature src="img-bluebery-branch.jpg"
@@ -80,8 +81,8 @@ export default function Home() {
           height={78}
         />
 
-        <Recipes title="Our Favorite Blueberry Recipes" text="Click to view recipes" href="#RecipeModal1">
-            <Recipe src="img-crumble-recipe-1.jpg" alt="Blueberry Crumble Recipe">
+        <Recipes title="Our Favorite Blueberry Recipes" text="Click to view recipes">
+            <Recipe src="img-crumble-recipe-1.jpg" alt="Blueberry Crumble Recipe" href="#RecipeModal1">
               <button type="button" className="btn btn-link text-uppercase" data-bs-toggle="modal" data-bs-target="#RecipeModal1">
                 Blueberry Crumble Bars Recipe
               </button>
@@ -167,9 +168,9 @@ export default function Home() {
                     <div className="col-lg-6">
                       <p className="text-uppercase mb-1">Cream Layer:</p>
                       <ul className="list-unstyled">
-                        <li>1 14oz can sweetened condensed milk</li>
-                        <li>2 cups milk (can substitute coconut milk)</li>
-                        <li>Juice from 2 lemons</li>
+                        <li>2 cups full fat greek yogurt (plain or vanilla)</li>
+                        <li>¼ cup honey (or Royal Blues Farm seasonal blueberry honey)</li>
+                        <li>2 tbsp freshly squeezed lemon juice</li>
                       </ul>
                     </div>
                     <div className="col-12 mt-3">
@@ -181,7 +182,7 @@ export default function Home() {
                         <li>Put 1-2 spoonfuls of blueberry mixture in each mold. Store with a popsicle stick to swirl the mixtures together.</li>
                         <li>Freeze and enjoy.</li>
                       </ol>
-                      <p class="small">Yield: 10-12 popsicles</p>
+                      <p className="small">Yield: 10-12 popsicles</p>
                     </div>
                   </div>
                 </div>
@@ -189,21 +190,13 @@ export default function Home() {
             </Recipe>
         </Recipes>
 
-
-
-
-
-          <div className="d-flex justify-content-center">
-              <div className="alert alert-primary alert-dismissible fade show w-50" role="alert">
-                  <strong>Edit this file</strong> in <code>pages/index.js</code>
-                  <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"/>
-              </div>
-          </div>
-
       </main>
 
-      <footer className="">
+      <footer className="text-center text-white">
+        <p className="small">Copyright &copy;{new Date().getFullYear()} Royal Blues Farm, Inc. <span className="px-1">|</span> Powered by <a href="http://sensory5.com" target="_blank">Sensory 5</a></p>
       </footer>
+
+
     </div>
   )
 }

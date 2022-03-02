@@ -60,12 +60,12 @@ p {
 // content columns
 .rbf-cols-blue {
   border: 6px solid $white;
-  min-height: 280px;
+  min-height: 345px;
   margin-top: -80px;
   position: relative;
 
   @include media-breakpoint-down(xl) {
-    min-height: 305px;
+    min-height: 366px;
   }
   @include media-breakpoint-down(lg) {
     min-height: auto;
@@ -91,6 +91,11 @@ p {
     color: #172852;
     margin: 0 .75rem;
     font-size: 3.5rem;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0 .5rem;
+      font-size: 3rem;
+    }
 
     &:hover,
     &:active {
@@ -182,4 +187,8 @@ p {
       }
     }
   }
+}
+
+footer {
+  font-weight: 600;
 }
