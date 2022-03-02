@@ -45,9 +45,9 @@ export default function Home() {
             <Feature src="img-bluebery-bucket.jpg"
                      alt="Blueberries in a bucket"
                      title="U-Pick Dates">
-                 <p class="date">Saturday, March 5, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
-                 <p class="date">Saturday, March 19, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
-                 <p class="date">Saturday, March 26, 2022<br /><span className="text-secondary">5:00pm - 8:00pm</span></p>
+                 <p className="date">Saturday, March 5, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
+                 <p className="date">Saturday, March 19, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
+                 <p className="date">Saturday, March 26, 2022<br /><span className="text-secondary">5:00pm - 8:00pm</span></p>
             </Feature>
 
             <Feature src="img-bluebery-branch.jpg"
@@ -181,7 +181,7 @@ export default function Home() {
                         <li>Put 1-2 spoonfuls of blueberry mixture in each mold. Store with a popsicle stick to swirl the mixtures together.</li>
                         <li>Freeze and enjoy.</li>
                       </ol>
-                      <p class="small">Yield: 10-12 popsicles</p>
+                      <p className="small">Yield: 10-12 popsicles</p>
                     </div>
                   </div>
                 </div>
