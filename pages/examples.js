@@ -62,7 +62,7 @@ export default function Home() {
                              icon="bi-emoji-smile-fill"
                              title="Cat Ipsum">
                         <p>
-                            Cat ipsum dolor sit amet, play with twist ties twitch tail in permanent irritation but step on your keyboard while you're gaming and then turn in a circle . Play with twist ties what the heck just happened, something feels fishy cats are cute and disappear for four days and return home with an expensive injury; bite the vet so attack curtains.
+                            Cat ipsum dolor sit amet, play with twist ties twitch tail in permanent irritation but step on your keyboard while you&apos;re gaming and then turn in a circle . Play with twist ties what the heck just happened, something feels fishy cats are cute and disappear for four days and return home with an expensive injury; bite the vet so attack curtains.
                         </p>
                     </Feature>
                     <Feature href="https://duckduckgo.com/?q=angry+cats&ia=web"
