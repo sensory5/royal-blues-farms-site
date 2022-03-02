@@ -121,3 +121,51 @@ p {
     }
   }
 }
+
+// recipe modal
+.rbf-recipe-modal {
+  .modal-content {
+    border: 6px solid $white;
+    border-radius: 0;
+
+    img {
+      border: none !important;
+    }
+
+    .modal-body {
+      padding: 0;
+
+      .rbf-btn-close {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: space-between;
+
+        .btn-close {
+          position: absolute;
+          right: 1rem;
+          top: 1rem;
+          z-index: 99;
+          filter: invert(1);
+          opacity: 1;
+
+          &:hover {
+            opacity: .6;
+          }
+        }
+      }
+    }
+
+    .rbf-modal-content {
+      font-weight: 600;
+
+      li {
+        padding-bottom: 0.25rem;
+      }
+
+      ol {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
