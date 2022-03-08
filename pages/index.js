@@ -16,7 +16,7 @@ export default function Home() {
 
       <Head>
         <title>Royal Blues Farm</title>
-        <meta name="description" content="Royal Blues Farm U-Pick website" />
+        <meta name="description" content="Royal Blues U-Pick Farm and Goods" />
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -194,7 +194,7 @@ export default function Home() {
       </main>
 
       <footer className="text-center text-white">
-        <p className="small">Copyright &copy;{new Date().getFullYear()} Royal Blues Farm, Inc. <span className="px-1">|</span> Powered by <a href="http://sensory5.com" target="_blank">Sensory 5</a></p>
+        <p className="small">Copyright &copy;{new Date().getFullYear()} Royal Blues Farm, Inc. <span className="px-1">|</span> Powered by &nbsp;<a href="http://sensory5.com" target="_blank">Sensory 5</a></p>
       </footer>
 
 
