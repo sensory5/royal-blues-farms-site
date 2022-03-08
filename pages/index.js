@@ -72,8 +72,8 @@ export default function Home() {
                  <p className="text-secondary mb-5"><a href="https://goo.gl/maps/PGADmq5nbRs1kYrA7" target="_blank" rel="noreferrer">Navigate with Google Maps</a></p>
 
                  <h4 className="text-uppercase fw-bold mb-1">Contact Us</h4>
-                 <p className="mb-1"><i className="bi bi-envelope"/><span className="rbf-icon">:</span> <a class="text-white" href="mailto:caroline@royalbluesfarm.com">caroline@royalbluesfarm.com</a></p>
-                 <p className="mb-0"><i className="bi bi-telephone"/><span className="rbf-icon">:</span> <a class="text-white" href="tel:1.813.545.8845">(813) 545-8845</a></p>
+                 <p className="mb-1"><i className="bi bi-envelope"/><span className="rbf-icon">:</span> <a className="text-white" href="mailto:caroline@royalbluesfarm.com">caroline@royalbluesfarm.com</a></p>
+                 <p className="mb-0"><i className="bi bi-telephone"/><span className="rbf-icon">:</span> <a className="text-white" href="tel:1.813.545.8845">(813) 545-8845</a></p>
             </Feature>
         </Features>
 
@@ -197,7 +197,7 @@ export default function Home() {
       </main>
 
       <footer className="text-center text-white">
-        <p className="small">Copyright &copy;{new Date().getFullYear()} Royal Blues Farm, Inc. <span className="px-1">|</span> Powered by &nbsp;<a href="http://sensory5.com" target="_blank">Sensory 5</a></p>
+        <p className="small">Copyright &copy;{new Date().getFullYear()} Royal Blues Farm, Inc. <span className="px-1">|</span> Powered by &nbsp;<a href="http://sensory5.com" target="_blank" rel="noreferrer">Sensory 5</a></p>
       </footer>
     </div>
   )
