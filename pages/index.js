@@ -43,16 +43,16 @@ export default function Home() {
             <Feature src="img-bluebery-bucket.jpg"
                      alt="Blueberries in a bucket"
                      title="U-Pick Dates">
-                 <p className="date">Saturday, April 9, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
-                 <p className="date">Sunday, April 10, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
-                 <p className="date">Saturday, May 7, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
-                 <p className="date">Sunday, May 8, 2022<br /><span className="text-secondary">8:00am - 3:00pm</span></p>
+                 <p className="date">Saturday, April 9, 2022<br /><span className="text-secondary">10:00am - 4:00pm</span></p>
+                 <p className="date">Sunday, April 10, 2022<br /><span className="text-secondary">10:00am - 4:00pm</span></p>
+                 <p className="date">Saturday, May 7, 2022<br /><span className="text-secondary">10:00am - 4:00pm</span></p>
+                 <p className="date">Sunday, May 8, 2022<br /><span className="text-secondary">10:00am - 4:00pm</span></p>
             </Feature>
 
             <Feature src="img-bluebery-branch.jpg"
                      alt="Blueberries on a branch"
                      title="Follow Us">
-                 <p className="mb-2">Hang with us in the<br />blueberry fields.</p>
+                 <p className="mb-2">Check our social media for more up to date info on our u-picks.</p>
 
                 <div className="rbf-social">
                   <a className="rbf-social_icons" href="https://www.facebook.com/royalbluesfarm" target="_blank" aria-label="Like Us on Facebook" rel="noreferrer">
@@ -62,13 +62,18 @@ export default function Home() {
                     <i className="bi bi-instagram"/>
                   </a>
                 </div>
+                <p>Hang with us in the<br />blueberry fields!</p>
             </Feature>
             <Feature src="img-bluebery-closeup.jpg"
                      alt="Close up of multi-colored blueberries"
                      title="Location">
                  <p>28078 Johnston Rd.<br />Dade City, FL 33523</p>
 
-                 <p className="text-secondary small"><a href="https://goo.gl/maps/PGADmq5nbRs1kYrA7" target="_blank" rel="noreferrer">Navigate with Google Maps</a></p>
+                 <p className="text-secondary mb-5"><a href="https://goo.gl/maps/PGADmq5nbRs1kYrA7" target="_blank" rel="noreferrer">Navigate with Google Maps</a></p>
+
+                 <h4 className="text-uppercase fw-bold mb-1">Contact Us</h4>
+                 <p className="mb-1"><i className="bi bi-envelope"/><span className="rbf-icon">:</span> <a class="text-white" href="mailto:caroline@royalbluesfarm.com">caroline@royalbluesfarm.com</a></p>
+                 <p className="mb-0"><i className="bi bi-telephone"/><span className="rbf-icon">:</span> <a class="text-white" href="tel:1.813.545.8845">(813) 545-8845</a></p>
             </Feature>
         </Features>
 

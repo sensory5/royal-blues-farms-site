@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Feature({src, alt, title, children}) {
    return (
-       <div className="feature col-lg-4 mb-4 mb-md-5 mb-lg-0">
+       <div className="feature col-xl-4 col-lg-6 mb-4 mb-md-5 mb-xl-0">
            <div className="rbf-cols-blue-img">
                <Image
                  src={`/images/${src}`}
