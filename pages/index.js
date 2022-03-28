@@ -67,9 +67,9 @@ export default function Home() {
             <Feature src="img-bluebery-closeup.jpg"
                      alt="Close up of multi-colored blueberries"
                      title="Location">
-                 <p>28078 Johnston Rd.<br />Dade City, FL 33523</p>
+                 <p>28978 Johnston Rd.<br />Dade City, FL 33523</p>
 
-                 <p className="text-secondary mb-5"><a href="https://goo.gl/maps/PGADmq5nbRs1kYrA7" target="_blank" rel="noreferrer">Navigate with Google Maps</a></p>
+                 <p className="text-secondary mb-5"><a href="https://goo.gl/maps/BPKVNgWyWFp7bjZc9" target="_blank" rel="noreferrer">Navigate with Google Maps</a></p>
 
                  <h4 className="text-uppercase fw-bold mb-1">Contact Us</h4>
                  <p className="mb-1"><i className="bi bi-envelope"/><span className="rbf-icon">:</span> <a className="text-white" href="mailto:caroline@royalbluesfarm.com">caroline@royalbluesfarm.com</a></p>
