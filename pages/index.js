@@ -181,7 +181,7 @@ export default function Home() {
                       <p className="text-uppercase mb-1">Directions:</p>
                       <ol>
                         <li>Combine all blueberry mixture ingredients in a saucepan. Cook on medium heat until berries cook down and can be smashed with a fork (about 29 minutes). Let cool.</li>
-                        <li>In a mixing bowl, combine the milk and condensed milk and stir until completely mixed. Stir in lemon juice. You can add more lemon if you like it tart.</li>
+                        <li>In a mixing bowl, gently fold the honey and lemon juice into the yogurt. You can adjust the tartness to your liking by adding more or less lemon juice.</li>
                         <li>Pour cream mixture about 2/3 full in each popsicle mold.</li>
                         <li>Put 1-2 spoonfuls of blueberry mixture in each mold. Store with a popsicle stick to swirl the mixtures together.</li>
                         <li>Freeze and enjoy.</li>
