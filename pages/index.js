@@ -69,9 +69,9 @@ export default function Home() {
             <Feature src="img-bluebery-closeup.jpg"
                      alt="Close up of multi-colored blueberries"
                      title="Location">
-                 <p>28078 Johnston Rd.<br />Dade City, FL 33523</p>
+                 <p>28978 Johnston Rd.<br />Dade City, FL 33523</p>
 
-                 <p className="text-secondary mb-5"><a href="https://goo.gl/maps/PGADmq5nbRs1kYrA7" target="_blank" rel="noreferrer">Navigate with Google Maps</a></p>
+                 <p className="text-secondary mb-5"><a href="https://goo.gl/maps/BPKVNgWyWFp7bjZc9" target="_blank" rel="noreferrer">Navigate with Google Maps</a></p>
 
                  <h4 className="text-uppercase fw-bold mb-1">Contact Us</h4>
                  <p className="mb-1"><i className="bi bi-envelope"/><span className="rbf-icon">:</span> <a className="text-white" href="mailto:caroline@royalbluesfarm.com">caroline@royalbluesfarm.com</a></p>
@@ -183,7 +183,7 @@ export default function Home() {
                       <p className="text-uppercase mb-1">Directions:</p>
                       <ol>
                         <li>Combine all blueberry mixture ingredients in a saucepan. Cook on medium heat until berries cook down and can be smashed with a fork (about 29 minutes). Let cool.</li>
-                        <li>In a mixing bowl, combine the milk and condensed milk and stir until completely mixed. Stir in lemon juice. You can add more lemon if you like it tart.</li>
+                        <li>In a mixing bowl, gently fold the honey and lemon juice into the yogurt. You can adjust the tartness to your liking by adding more or less lemon juice.</li>
                         <li>Pour cream mixture about 2/3 full in each popsicle mold.</li>
                         <li>Put 1-2 spoonfuls of blueberry mixture in each mold. Store with a popsicle stick to swirl the mixtures together.</li>
                         <li>Freeze and enjoy.</li>
