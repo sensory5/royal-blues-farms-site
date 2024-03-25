@@ -43,11 +43,10 @@ export default function Home() {
             <Feature src="img-bluebery-bucket.jpg"
                      alt="Blueberries in a bucket"
                      title="U-Pick Dates">
-                 <p className="date text-secondary">Hours: 9:00am - 2:30pm</p>
+                 <p className="date text-secondary mb-4">Hours: 9:00am - 2:30pm</p>
                  <p className="date">March 29-30, 2024</p>
                  <p className="date">April 13-14, 2024</p>
                  <p className="date">April 27-28, 2024</p>
-                 <p className="date">May 4-5, 2024</p>
                  <p className="date">May 11-12, 2024</p>
             </Feature>
 
