@@ -63,12 +63,12 @@ p {
 // content columns
 .rbf-cols-blue {
   border: 6px solid $white;
-  min-height: 345px;
+  min-height: 442px;
   margin-top: -80px;
   position: relative;
 
   @include media-breakpoint-down(xxl) {
-    min-height: 372px;
+    min-height: 444px;
   }
   @include media-breakpoint-down(xl) {
     min-height: 336px;
@@ -88,6 +88,14 @@ p {
   }
   p.date {
     line-height: 1.25;
+  }
+  p.date-xs {
+    line-height: 1;
+    margin-bottom: .9rem;
+  }
+  p.time {
+    line-height: 1.3;
+    margin-bottom: .875rem;
   }
   p.small {
     font-size: $font-size-base;

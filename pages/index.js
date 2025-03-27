@@ -43,11 +43,34 @@ export default function Home() {
             <Feature src="img-bluebery-bucket.jpg"
                      alt="Blueberries in a bucket"
                      title="U-Pick Dates">
-                 <p className="date text-secondary mb-4">Hours: 9:00am - 2:30pm</p>
-                 <p className="date">March 29-30, 2024</p>
-                 <p className="date">April 13-14, 2024</p>
-                 <p className="date">April 27-28, 2024</p>
-                 <p className="date">May 11-12, 2024</p>
+                 <p className="date text-secondary mb-2">2025 Pick Dates</p>
+
+                 <div className="row mb-4">
+                    <div className="col-lg-6">
+                      <p className="date-xs">April 3-6</p>
+                      <p className="date-xs">April 10-13</p>
+                      <p className="date-xs">April 17</p>
+                      <p className="date-xs">April 24-27</p>
+                    </div>
+                    <div className="col-lg-6">
+                      <p className="date-xs">May 1</p>
+                      <p className="date-xs">May 8-9</p>
+                      <p className="date-xs">May 11</p>
+                    </div>
+                 </div>
+
+                 <p className="date text-secondary mb-2">2025 Pick Times</p>
+
+                 <div className="row">
+                    <div className="col-lg-6">
+                      <p className="time">Thursday<br />10am - 2pm</p>
+                      <p className="time">Friday<br />3pm - 7pm</p>
+                    </div>
+                    <div className="col-lg-6">
+                    <p className="time">Saturday<br />9am - 2pm</p>
+                    <p className="time">Sunday<br />10am - 2pm</p>
+                    </div>
+                 </div>
             </Feature>
 
             <Feature src="img-bluebery-branch.jpg"
@@ -77,6 +100,10 @@ export default function Home() {
                  <p className="mb-0"><i className="bi bi-telephone"/><span className="rbf-icon">:</span> <a className="text-white" href="tel:1.813.545.8845">(813) 545-8845</a></p>
             </Feature>
         </Features>
+
+        <div className="container my-3 my-lg-5 mt-lg-3 px-5 text-center text-white rbf-content">
+          <p>All U-Pick dates and times are subject to change due to weather. Please check our instagram and facebook pages before planning your trip out to the farm.</p>
+        </div>
 
         <Divider
           src="img-icon-berries.svg"
