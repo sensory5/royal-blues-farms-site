@@ -64,11 +64,11 @@ export default function Home() {
                  <div className="row">
                     <div className="col-lg-6">
                       <p className="time">Thursday<br />10am - 2pm</p>
-                      <p className="time">Friday<br />3pm - 7pm</p>
+                      <p className="time">Friday<br />10am - 2pm</p>
                     </div>
                     <div className="col-lg-6">
-                    <p className="time">Saturday<br />9am - 2pm</p>
-                    <p className="time">Sunday<br />10am - 2pm</p>
+                    <p className="time">Saturday<br />9am - 1pm</p>
+                    <p className="time">Sunday<br />9am - 1pm</p>
                     </div>
                  </div>
             </Feature>
