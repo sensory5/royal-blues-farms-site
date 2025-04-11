@@ -61,16 +61,8 @@ export default function Home() {
 
                  <p className="date text-secondary mb-2">2025 Pick Times</p>
 
-                 <div className="row">
-                    <div className="col-lg-6">
-                      <p className="time">Thursday<br />10am - 2pm</p>
-                      <p className="time">Friday<br />3pm - 7pm</p>
-                    </div>
-                    <div className="col-lg-6">
-                    <p className="time">Saturday<br />9am - 2pm</p>
-                    <p className="time">Sunday<br />10am - 2pm</p>
-                    </div>
-                 </div>
+                 <p className="time">Thursday & Friday<br />10am - 2pm</p>
+                 <p className="time mb-0">Saturday & Sunday<br />9am - 1pm</p>
             </Feature>
 
             <Feature src="img-bluebery-branch.jpg"
