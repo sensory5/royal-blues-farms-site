@@ -43,26 +43,29 @@ export default function Home() {
             <Feature src="img-bluebery-bucket.jpg"
                      alt="Blueberries in a bucket"
                      title="U-Pick Dates">
-                 <p className="date text-secondary mb-2">2025 Pick Dates</p>
+                 <p className="date text-secondary mb-2">2026 Pick Dates</p>
 
                  <div className="row mb-4">
                     <div className="col-lg-6">
-                      <p className="date-xs">April 3-6</p>
-                      <p className="date-xs">April 10-13</p>
-                      <p className="date-xs">April 17</p>
-                      <p className="date-xs">April 24-27</p>
+                      <p className="date-xs">April 11-12</p>
+                      <p className="date-xs">April 15-16</p>
+                      <p className="date-xs">April 18-19</p>
+                      <p className="date-xs">April 23-24</p>
+                      <p className="date-xs">April 26</p>
                     </div>
                     <div className="col-lg-6">
-                      <p className="date-xs">May 1</p>
-                      <p className="date-xs">May 8-9</p>
-                      <p className="date-xs">May 11</p>
+                      <p className="date-xs">April 29</p>
+                      <p className="date-xs">May 7-8</p>
+                      <p className="date-xs">May 9-10</p>
+                      <p className="date-xs">May 14-15</p>
+                      <p className="date-xs">May 16-17</p>
                     </div>
                  </div>
 
-                 <p className="date text-secondary mb-2">2025 Pick Times</p>
+                 <p className="date text-secondary mb-2">2026 Pick Times</p>
 
-                 <p className="time">Thursday & Friday<br />10am - 2pm</p>
-                 <p className="time mb-0">Saturday & Sunday<br />9am - 1pm</p>
+                 <p className="time">Wednesday - Friday<br />10am - 2pm</p>
+                 <p className="time mb-0">Saturday & Sunday<br />9am - 2pm</p>
             </Feature>
 
             <Feature src="img-bluebery-branch.jpg"
@@ -94,7 +97,7 @@ export default function Home() {
         </Features>
 
         <div className="container my-3 my-lg-5 mt-lg-3 px-5 text-center text-white rbf-content">
-          <p>All U-Pick dates and times are subject to change due to weather. Please check our instagram and facebook pages before planning your trip out to the farm.</p>
+          <p>All U-Pick dates and times are subject to change due to weather. Please check with <a href="https://www.instagram.com/royalbluesfarm/" target="_blank" aria-label="Check Instagram" rel="noreferrer">Instagram</a> and <a href="https://www.facebook.com/royalbluesfarm" target="_blank" aria-label="Check Facebook" rel="noreferrer">Facebook</a> (for daily updates) about the pickups before planning your trip out to the farm.</p>
         </div>
 
         <Divider
