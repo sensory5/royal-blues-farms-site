@@ -52,6 +52,7 @@ p {
     img {
       @include media-breakpoint-down(xl) {
         width: 350px !important;
+        height: auto;
       }
       @include media-breakpoint-down(sm) {
         width: 250px !important;
@@ -170,6 +171,8 @@ p {
   .rbf-recipe-img {
     img {
       border: 6px solid $white !important;
+      height: auto;
+      width: 100%;
     }
   }
 
