@@ -36,6 +36,8 @@ p {
   }
 
   .rbf-hero-overlay {
+    position: relative;
+
     @include media-breakpoint-down(sm) {
       padding-top: 1rem !important;
     }
