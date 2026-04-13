@@ -48,7 +48,7 @@ export default function Home() {
                  <div className="row mb-4">
                     <div className="col-lg-6">
                       <p className="date-xs">April 11-12</p>
-                      <p className="date-xs">April 15-16</p>
+                      <p className="date-xs">April 16</p>
                       <p className="date-xs">April 18-19</p>
                       <p className="date-xs">April 23-24</p>
                       <p className="date-xs">April 26</p>
